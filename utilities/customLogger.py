@@ -11,7 +11,7 @@ class LogGen:
             format='%(asctime)s: %(levelname)s: %(message)s',  # Set the format of each log message.
             datefmt='%m/%d/%Y %I:%M:%S %p'  # Set the date and time format for log messages.
         )
-        
+
         # Get the root logger instance.
         logger = logging.getLogger()
 
