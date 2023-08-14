@@ -23,3 +23,18 @@ def pytest_addoption(parser): # This will get the value from CLI/ Hooks
 @pytest.fixture()
 def browser(request):  # This will return the browser value to setup method
     return request.config.getoption("--browser")
+
+
+############# HTML Report Generation
+
+#This hook is used for adding environment in HTML report
+# def pytest_configure(config):
+#     config._metadata['Project Name'] = 'nop commerce'
+#     config._metadata['Module Name'] = 'Customers'
+#     config._metadata['Tester'] = 'Vivek'
+#
+# #This hook is used to delete/ modify environment info in HTMl report
+# @pytest.mark.optionalhook
+# def pytest_metadata(metadata):
+#     metadata.pop("JAVA_HOME", None)
+#     metadata.pop("Plugins", None)
